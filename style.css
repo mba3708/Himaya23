@@ -388,7 +388,7 @@ span {
  h2 {
     margin-bottom: 2rem;
     margin-top: 0%;
-
+    font-weight: 100;
 }
 
 .portfolio-container {
@@ -635,6 +635,7 @@ span {
         margin-top: 4rem;
     }
 
+
     .about {
         flex-direction: column-reverse;
     }
@@ -695,9 +696,12 @@ span {
     }
 
     .portfolio-box img{
-        width: 30rem;
+        width: 33rem;
     }
-
+    .portfolio-box img{
+        width: 32.5rem;
+        padding-left: .5rem;
+    }
     .contact form .input-box input {
         width: 100%;
     }
@@ -729,8 +733,9 @@ span {
 
 @media (max-width: 365px) {
 
+
     .result-button {
-        margin-left: 3rem;
+        margin-left: 7rem;
     }
     .home-img img {
         width: 90vw;
@@ -751,11 +756,18 @@ span {
     .footer-icontop {
         text-align: center;
     }
+    .aml{
+        margin-left: 10rem;
+    }
 }
 
 @media (max-width: 320px) {
-
+    
     .result-button{
         margin-left: 2rem;
+    }
+    .portfolio-box img{
+        width: 20rem;
+        padding-right: 2rem;
     }
 }

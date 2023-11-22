@@ -1,0 +1,335 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #1f242d;
+    color: black;
+    height: 100%;
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    color:rgb(255, 0, 255) ;
+}
+
+.header {
+    position: fixed;
+    top: 0%;
+    height: 5rem;
+    left: 0%;
+    width: 100%;
+    padding: 2rem 9%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header-img {
+    height: 6rem;
+    width: 10rem;
+}
+
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 70px;
+    
+}
+
+.result h2 {
+    margin-bottom: 2rem;
+    margin-top: 0%;
+}
+
+.result-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 3rem;
+    height: 30rem;
+    width: 100rem;
+    margin-left: 10rem;
+    
+}
+
+.result-container .result-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.result-box {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    background-color: violet;
+}
+
+.result-button {
+    background-color: aliceblue;
+    width: 15rem;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    margin-left: 8rem;
+    margin-top: 16rem;
+}
+.prgm {
+    background-color: aliceblue;
+    width: 15rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    margin-left: 8rem;
+    margin-top: 6rem;
+}
+
+.result-box .result-layer {
+    position: absolute;
+    display: grid;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.result-box:hover .result-layer {
+    transform: translateY(0%);
+}
+
+.result-layer h4 {
+    font-size: 3rem;
+}
+
+.result-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.popup {
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 30px;
+
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+
+.popup1 h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 30px;
+
+}
+
+.popup1 button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+
+.popup1 {
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup1{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup2 h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 30px;
+
+}
+
+.popup2 button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+
+.popup2 {
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup2{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup3 h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 30px;
+
+}
+
+.popup3 button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+
+.popup3 {
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup3{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+@media (max-width:1100px) {
+    .result-container {
+        
+        grid-template-columns:  1fr;
+        align-items: center;
+        gap: 3rem;
+        height: 150rem;
+        width: 80%;
+        margin-left: 2rem;
+        
+    }
+
+    .result-button {
+        background-color: aliceblue;
+        width: 15rem;
+        height: 7rem;
+        padding: 1rem 2.5rem;
+        border-radius: 4rem;
+        font-size: 1.6rem;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        margin-left: 10rem;
+        margin-top: 25rem;
+    }
+}
